@@ -1,0 +1,6 @@
+[submodule "z"]
+	path = z
+	url = https://github.com/rupa/z
+[submodule "git"]
+	path = git
+	url = https://github.com/git/git
