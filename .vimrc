@@ -48,7 +48,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/syntastic'
 
 " Ctrl-P
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " Surround.vim
 Plugin 'tpope/vim-surround'
@@ -97,4 +97,7 @@ set expandtab     " Tabs insert spaces
 " Line width
 set textwidth=120
 set colorcolumn=120  " Show line width
+
+" Ctrl-P settings
+set wildignore+=*/node_modules/*
 
