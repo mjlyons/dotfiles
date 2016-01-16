@@ -59,6 +59,14 @@ Plugin 'bling/vim-airline'
 " vim-colors-solarized
 Plugin 'altercation/vim-colors-solarized'
 
+"Coffeescript"
+Plugin 'kchmck/vim-coffee-script'
+
+"Highlight bad whitespace"
+Plugin 'ntpeters/vim-better-whitespace'
+
+Plugin 'mileszs/ack.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -100,4 +108,8 @@ set colorcolumn=120  " Show line width
 
 " Ctrl-P settings
 set wildignore+=*/node_modules/*
+let g:ctrlp_max_files = 0
+
+" Coffeescript
+filetype plugin indent on
 
