@@ -57,7 +57,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'bling/vim-airline'
 
 " vim-colors-solarized
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'chriskempson/base16-vim'
 
 "Coffeescript"
 Plugin 'kchmck/vim-coffee-script'
@@ -85,7 +85,7 @@ filetype plugin indent on    " required
 " Solarized
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme base16-solarized
 
 " Always show status bar
 set laststatus=2
@@ -107,9 +107,11 @@ set textwidth=120
 set colorcolumn=120  " Show line width
 
 " Ctrl-P settings
-set wildignore+=*/node_modules/*
 let g:ctrlp_max_files = 0
+set wildignore+=*/node_modules/*,*/.git/*,*/build/*
 
 " Coffeescript
 filetype plugin indent on
 
+" Line numbers
+set number
